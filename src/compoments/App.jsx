@@ -3,10 +3,10 @@ import Body from "./body"
 
 function App() {
   return(
-    <>
-    <Header/>
-    <Body />
-    </>
+    <div className= "max-w-screen-xl bg-gray-900 mx-auto">
+      <Header/>
+      <Body />
+    </div>
   )
 }
 
