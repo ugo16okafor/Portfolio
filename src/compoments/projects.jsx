@@ -1,10 +1,9 @@
-import flower from "../assets/images/flower.jpg";
 
 const Projects = () => {
   return (
     
     <div>
-      <img src={flower} alt="Beautiful flower" />
+      <img src="assets/images/flower.jpg" alt="Beautiful flower" />
     </div>
   );
 };

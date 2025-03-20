@@ -1,11 +1,12 @@
 import Header from "./Header"
 import Body from "./body"
 
+
 function App() {
   return(
-    <div className= "max-w-screen-xl bg-gray-900 mx-auto">
+    <div className= "bg-[url('/assets/images/bg-md.jpeg')] bg-no-repeat bg-center bg-cover">
       <Header/>
-      <Body />
+      <Body/>
     </div>
   )
 }

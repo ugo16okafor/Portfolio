@@ -1,61 +1,30 @@
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaReact } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import Projects from "./projects";
 
-const Body = () => {
-  const profileImage = ""; // Add your image URL here, or leave empty for placeholder
+function Body(params) {
 
-  return (
-    <main className="flex flex-col font-Montserrat bg-gray-900 text-white">
-      {/* Hero Section */}
-      <div className="h-screen flex flex-col justify-center items-center px-6 md:px-20 text-center">
-        
-        {/* Profile Picture Placeholder */}
-        <div className="w-40 h-40 rounded-full overflow-hidden bg-gray-700 flex justify-center items-center mb-6">
-          <img
-            src={profileImage || "https://via.placeholder.com/150"}
-            alt="Profile"
-            className="w-full h-full object-cover"
-          />
-        </div>
+    return(
+        <main className="flex justify-center  mx-10">
+            <section className="font-Montserrat grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 grid-rows-2">
+                <div className="flex justify-center row-start-1 items-center lg:row-start-1 lg:col-start-2">
+                    <div className="  rounded-full w-56 h-56 md:h-96 md:w-96 bg-amber-100 overflow-hidden">
+                        <img className="bg-cover bg-center" src="/assets/images/deadpool.png" alt="pfp" />
+                    </div>
+                </div>
+                <div className="row-start-2 lg:row-start-1 flex justify-center lg:justify-start items-center rounded-2xl lg:col-start-1 lg:ml-10">
+                    <div className="flex-col text-center lg:text-start leading-loose">
+                        <p className=" text-black text-2xl">
+                            Hello, i'm <br /><span className="text-3xl md:text-7xl text-red-500 font-bold">Ugochukwu </span><br />(uu-g-OH-ch-uu-k-w-uu)
+                        </p>
+                        <p><span className="text-red-500 text-2xl md:text-4xl">Frontend developer</span> based in Nigeria. Deploying <span className="text-red-500 text-2xl md:text-4xl">Scalable Responsive websites</span></p>
+                    </div>
+                </div>
+            </section>
+            {/* technologies i work with */}
+            <section>
+                
+            </section>
+        </main>
+    )
+    
+}
 
-        <div className="py-6 md:py-9">
-          <h1 className="text-3xl md:text-5xl font-bold pb-6">
-            Hi,👋 I'm Ugochukwu Okafor
-          </h1>
-          <p className="text-lg md:text-2xl leading-relaxed">
-            Web developer based in Nigeria. Building full-stack cross-platform
-            solutions with React.
-          </p>
-        </div>
-
-        {/* Tech Stack Section */}
-        <div className="py-10 md:py-20 text-center">
-          <h1 className="text-2xl md:text-3xl py-5">My tech stack</h1>
-          <div className="flex flex-wrap justify-center gap-10 text-lg md:text-2xl">
-            <p className="flex items-center gap-2">
-              <RiTailwindCssFill /> Tailwind
-            </p>
-            <p className="flex items-center gap-2">
-              <FaReact /> React
-            </p>
-            <p className="flex items-center gap-2">
-              <SiJavascript /> JavaScript
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Projects Section */}
-      <section id="Projects" className="flex flex-col items-center justify-center h-screen p-6 md:p-10">
-        <div className="text-center text-xl md:text-2xl">
-          <h1 className="mb-6">Projects I have worked on</h1>
-          <Projects />
-        </div>
-      </section>
-    </main>
-  );
-};
-
-export default Body;
+export default Body
