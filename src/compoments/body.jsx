@@ -1,4 +1,4 @@
-import { BsGithub, BsTwitterX, BsLinkedin } from "react-icons/bs";
+import { BsTwitterX, BsLinkedin } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 
 function Body(params) {
@@ -32,11 +32,7 @@ function Body(params) {
               </span>
             </p>
             <ul className="flex text-3xl justify-center lg:justify-start text-white gap-5 py-4">
-              <li>
-                <a href="https://github.com/ugo16okafor" target="_blank">
-                  <BsGithub />
-                </a>
-              </li>
+              
               <li>
                 <a
                   href="http://www.linkedin.com/in/ugochukwu-okafor16"

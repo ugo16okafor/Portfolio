@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 
 const Footer = () => {
@@ -8,9 +8,6 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Ugochukwu Okafor. All rights reserved.
       </p>
       <div className="mt-2 flex justify-center space-x-4">
-        <a href="https://github.com/ugo16okafor" target="_blank">
-          <BsGithub />
-        </a>
         <a
           href="https://www.linkedin.com/in/ugochukwu-okafor16"
           target="_blank"
