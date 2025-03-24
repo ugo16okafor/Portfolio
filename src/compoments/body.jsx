@@ -6,10 +6,10 @@ function Body(params) {
     <main className="flex h-screen justify-center mx-10">
       <section className="font-Montserrat grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 grid-rows-2 my-20 lg:my-0 lg:mx-10">
         <div className="flex justify-center row-start-1 items-center lg:row-start-1 lg:col-start-2">
-          <div className="  rounded-full w-56 h-56 md:h-96 md:w-96 bg-amber-100 overflow-hidden">
+          <div className="border-4 border-white rounded-full w-56 h-56 md:h-96 md:w-96 bg-amber-100 overflow-hidden">
             <img
               className="bg-cover bg-center"
-              src="/assets/images/deadpool.png"
+              src="/assets/images/Profile.png"
               alt="pfp"
             />
           </div>
