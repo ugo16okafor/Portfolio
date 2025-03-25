@@ -26,6 +26,9 @@ const Technologies = () => {
           <li className="bg-white text-black px-4 py-2 rounded-3xl shadow-md">
             CSS
           </li>
+          <li className="bg-white md:col-start-2 text-black px-4 py-2 rounded-3xl shadow-md">
+            A.I
+          </li>
         </ul>
       </div>
     );

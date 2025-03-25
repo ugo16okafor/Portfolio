@@ -10,7 +10,7 @@ const Projects = () => {
         <Card
           title="Portfolio Website"
           description="A personal portfolio showcasing my projects and skills."
-          image="https://gamakatsu.com/wp-content/uploads/2017/04/100-NickelSiwashOpenEyeMain.jpg"
+          image="/assets/images/port.png"
           link="https://dior.com"
         />
       </div>

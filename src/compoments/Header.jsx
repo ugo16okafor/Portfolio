@@ -1,9 +1,11 @@
 import { CiMenuBurger } from "react-icons/ci";
-import { IoMdDownload } from "react-icons/io";
 import { useState } from "react";
+import DownloadButton from "./ResumeBtn";
+import { RxCross2 } from "react-icons/rx";
 
 function Header() {
   const [ismenuOpen, setmenuOPen] = useState(false);
+
   return (
     <header className=" flex justify-between left-0 px-10 w-full fixed top-0 bg-gray-950/70 backdrop-blur-md shadow-lg py-4 font-Montserrat">
       {/* logo */}
@@ -30,15 +32,11 @@ function Header() {
           <CiMenuBurger className="text-3xl"></CiMenuBurger>
         </button>
         {/* button */}
-        <button className="hidden xl:flex text-md bg-blue-800 text-white px-4 p-2 rounded-full">
-          <a href="" className="flex items-center gap-2 ">
-            <IoMdDownload />
-            Resume
-          </a>
-        </button>
-
+        <div className="hidden lg:flex" >
+          <DownloadButton fileUrl="/Files/resume.txt" fileName="resume.txt" />
+        </div>
         {ismenuOpen && (
-          <ul className="md:hidden h-screen absolute top-16 inset-0 bg-gray-950/95 border-b text-white border-blue-600 py-16 text-center space-y-5">
+          <ul className="md:hidden h-screen absolute top-16 inset-0 bg-gray-950/95 border-b text-white border-blue-600 py-16 text-center space-y-10">
             <li>
               <a href="#about" onClick={() => setmenuOPen(false)}>
                 About
@@ -55,9 +53,12 @@ function Header() {
               </a>
             </li>
             <li>
-              <button className="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-full transition">
-                Resume
-              </button>
+              <div>
+                <DownloadButton
+                  fileUrl="/Files/resume.txt"
+                  fileName="resume.txt"
+                />
+              </div>
             </li>
           </ul>
         )}
