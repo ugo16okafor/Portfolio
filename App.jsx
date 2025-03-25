@@ -6,15 +6,19 @@ import Footer from "./src/compoments/footer";
 
 function App() {
   return (
-    <p>
+    <>
+      <Header />
       <div className="bg-gray-950">
-        <Header />
         <Body />
-        <Technologies />
-        <Projects />
-        <Footer />
       </div>
-    </p>
+      <div className="h-screen">
+        <Technologies />
+      </div>
+      <div className="h-screen">
+        <Projects />
+      </div>
+      <Footer />
+    </>
   );
 }
 

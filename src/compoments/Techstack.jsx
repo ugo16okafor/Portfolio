@@ -3,7 +3,7 @@
 
 const Technologies = () => {
     return (
-      <div className="text-center py-10 mx-10 font-montserrat">
+      <div className="text-center py-10 mx-10 font-montserrat ">
         <h2 className="flex justify-center text-2xl font-Montserrat text-blue-500 py-5">
           Frameworks & Tools
         </h2>
