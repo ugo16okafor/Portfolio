@@ -9,7 +9,7 @@ function Hero() {
           <div className="border-4 border-white rounded-full w-56 h-56 md:h-96 md:w-96 bg-amber-100 overflow-hidden">
             <img
               className="bg-cover bg-center"
-              src="/assets/images/Profile.png"
+              src="/assets/Profile.png"
               alt="pfp"
             />
           </div>

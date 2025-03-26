@@ -6,11 +6,11 @@ const Projects = () => {
       <div className="flex justify-center text-2xl text-blue-500 py-5">
         <h1>Featured Projects</h1>
       </div>
-      <div className="flex">
+      <div className="flex absolute -z-10">
         <Card
           title="Portfolio Website"
           description="A personal portfolio showcasing my projects and skills."
-          image="/assets/images/port.png"
+          image="/assets/port.png"
           link="https://dior.com"
         />
       </div>
