@@ -1,7 +1,7 @@
 import Header from "./componments/Header";
 import Hero from "./componments/Hero";
 import Technologies from "./componments/Techstack";
-import Projects from "./componments/Projects";
+import Projects from "./componments/projects";
 import Footer from "./componments/footer";
 
 function App() {
