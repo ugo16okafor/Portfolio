@@ -1,7 +1,7 @@
-import { BsTwitterX, BsLinkedin } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 
-function Body(params) {
+function Hero() {
   return (
     <main className="flex h-screen justify-center mx-10">
       <section className="font-Montserrat grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 grid-rows-2 my-20 lg:my-0 lg:mx-10">
@@ -57,4 +57,4 @@ function Body(params) {
   );
 }
 
-export default Body;
+export default Hero;

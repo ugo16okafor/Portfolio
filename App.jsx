@@ -1,5 +1,5 @@
 import Header from "./src/compoments/Header";
-import Body from "./src/compoments/Body";
+import Hero from "./src/compoments/Hero";
 import Technologies from "./src/compoments/Techstack";
 import Projects from "./src/compoments/Projects";
 import Footer from "./src/compoments/footer";
@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <div className="bg-gray-950">
-        <Body />
+        <Hero />
       </div>
       <div className="h-screen">
         <Technologies />
