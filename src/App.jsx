@@ -1,8 +1,8 @@
-import Header from "./compoments/Header";
-import Hero from "./compoments/Hero";
-import Technologies from "./compoments/Techstack";
-import Projects from "./compoments/Projects";
-import Footer from "./compoments/footer";
+import Header from "./componments/Header";
+import Hero from "./componments/Hero";
+import Technologies from "./componments/Techstack";
+import Projects from "./componments/Projects";
+import Footer from "./componments/footer";
 
 function App() {
   return (
