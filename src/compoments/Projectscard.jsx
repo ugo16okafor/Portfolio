@@ -1,7 +1,7 @@
 
 export default function Card({ title, description, image, link }) {
   return (
-    <div className="bg-white rounded-4xl overflow-hidden w-full max-w-sm transform transition duration-300 hover:scale-105">
+    <div className="bg-white rounded-4xl overflow-hidden w-full max-w-sm lg:hover:scale-105">
       <a href={link} target="_blank">
         <img src={image} alt={title} className="w-full h-48 object-cover" />
         <div className="p-4">
