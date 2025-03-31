@@ -8,7 +8,7 @@ const Projects = () => {
         <div className="flex justify-center text-2xl text-blue-500 py-5">
           <h1>Featured Projects</h1>
         </div>
-        <div className="flex">
+        <div className="flex gap-20">
           <Card
             title="Portfolio Website"
             description="A personal portfolio showcasing my projects and skills."
