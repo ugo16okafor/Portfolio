@@ -15,6 +15,12 @@ const Projects = () => {
             image="/assets/port.png"
             link="ugodevs.vercel.app"
           />
+          <Card
+            title="Heart finder"
+            description="A romance based game made using only javascript"
+            image="/assets/heartfinder.png"
+            link="heart-finder.vercel.app"
+          />
         </div>
       </div>
     </section>
