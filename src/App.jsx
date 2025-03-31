@@ -16,7 +16,7 @@ function App() {
       <div className="h-screen">
         <Technologies />
       </div>
-      <div className="h-screen">
+      <div className="h-auto">
         <Projects />
       </div>
       <Footer />
