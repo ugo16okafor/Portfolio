@@ -1,38 +1,38 @@
+import React from "react";
 
+// Tech data array
+const techData = [
+  { id: 1, name: "React" },
+  { id: 2, name: "Tailwind CSS" },
+  { id: 3, name: "JavaScript" },
+  { id: 4, name: "HTML" },
+  { id: 5, name: "CSS" },
+  { id: 6, name: "A.I Tools" },
+];
 
+// Individual card component
+const Tech = ({ name }) => {
+  return (
+    <div className="bg-white shadow-md rounded-2xl p-6 flex items-center justify-center text-gray-800 text-lg font-semibold hover:shadow-lg transition-all duration-300">
+      {name}
+    </div>
+  );
+};
 
-const Technologies = () => {
-    return (
-      <div className="text-center py-10 mx-10 font-montserrat ">
-        <h2 className="flex justify-center text-2xl font-Montserrat text-blue-500 py-5">
-          Frameworks & Tools
-        </h2>
-        <ul className="grid grid-cols-2 md:grid-cols-3 gap-6 text-lg font-medium">
-          <li className="bg-white text-black px-4 py-2 rounded-3xl shadow-md">
-            React
-          </li>
-          <li className="bg-white text-black px-4 py-2 rounded-3xl shadow-md">
-            Tailwind CSS
-          </li>
-          <li className="bg-white text-black px-4 py-2 rounded-3xl shadow-md">
-            Framer Motion
-          </li>
-          <li className="bg-white text-black px-4 py-2 rounded-3xl shadow-md">
-            JavaScript
-          </li>
-          <li className="bg-white text-black px-4 py-2 rounded-3xl shadow-md">
-            HTML
-          </li>
-          <li className="bg-white text-black px-4 py-2 rounded-3xl shadow-md">
-            CSS
-          </li>
-          <li className="bg-white md:col-start-2 text-black px-4 py-2 rounded-3xl shadow-md">
-            A.I
-          </li>
-        </ul>
+// Main list component
+const TechList = () => {
+  return (
+    <div className="h-auto bg-gray-100 p-8">
+      <h2 className="text-3xl font-bold mb-8 text-center text-gray-700">
+        Tech Stack
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        {techData.map((tech) => (
+          <Tech key={tech.id} {...tech} />
+        ))}
       </div>
-    );
-  };
-  
-  export default Technologies;
-  
+    </div>
+  );
+};
+
+export default TechList;
