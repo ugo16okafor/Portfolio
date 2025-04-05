@@ -47,6 +47,15 @@ function Hero() {
                 </li>
                 <li>
                   <a
+                    href="http://www.linkedin.com/in/ugochukwu-okafor16"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <BsLinkedin />
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="mailto:your.email@example.com"
                     target="_blank"
                     rel="noopener noreferrer"
